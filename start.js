@@ -4,10 +4,24 @@ let path = require('path')
 let fs = require('fs')
 let package = require('./package.json')
 const CFonts = require('cfonts')
-CFonts.say(`'${package.name}' By @${package.author.name || package.author}`, {
-    font: 'pallet',
+CFonts.say(`${package.name}`, {
+    font: 'slick',
     align: 'center',
-    colors: ['red'],
+    colors: ['candy'],
+    background: 'transparent',
+    letterSpacing: 1,
+    lineHeight: 1,
+    space: true,
+    maxLength: '0',
+    gradient: true,
+    independentGradient: true,
+    transitionGradient: true,
+});
+
+CFonts.say(`Project Whatsapp Bot `, {
+    font: 'chrome',
+    align: 'center',
+    colors: ['candy'],
 });
 
 var isRunning = false;
